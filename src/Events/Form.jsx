@@ -1,4 +1,9 @@
 function MyForm() {
+  const getNameValue = (e) => {
+    // console.log(e);
+    console.log(e.target.value);
+  };
+
   return (
     <div>
       <div>
@@ -6,7 +11,7 @@ function MyForm() {
           <label>Name</label>
         </p>
         <p>
-          <input type="text" />
+          <input onChange={getNameValue} type="text" />
         </p>
       </div>
       <div>
@@ -14,7 +19,12 @@ function MyForm() {
           <label>Email</label>
         </p>
         <p>
-          <input type="email" />
+          <input
+            type="email"
+            onBlur={(e) => {
+              getNameValue(e);
+            }}
+          />
         </p>
       </div>
     </div>
