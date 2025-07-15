@@ -13,10 +13,16 @@ function Buttons() {
     alert(date);
   };
 
+  function mouseIn() {
+    console.log("Mouse here");
+  }
+
   return (
     <div>
       <p>
-        <button onClick={clicked}>Click Me</button>
+        <button onMouseEnter={mouseIn} onClick={clicked}>
+          Click Me
+        </button>
       </p>
       <p>
         <button

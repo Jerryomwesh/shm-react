@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import Buttons from "./Events/Btns";
+import Form from "./Events/Form";
 
 import ArrayData from "./DisplayData/ArrayData";
 
@@ -15,6 +16,6 @@ import "./mycss/main.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Buttons />
+    <Form />
   </StrictMode>
 );
