@@ -14,8 +14,10 @@ import "./css.css";
 
 import "./mycss/main.css";
 
+import SimpleState from "./Hooks/State/SimpleState";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Form />
+    <SimpleState />
   </StrictMode>
 );
