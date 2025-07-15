@@ -1,8 +1,14 @@
+import { useState } from "react";
+
+//return [currentState,function:updateState]
+
 function SimpleState() {
+  //Rule: Initial State
+  const state = useState(10);
+
   let clicked = 0;
   const increment = () => {
-    console.log(clicked);
-    clicked = clicked + 1; //In clicked++
+    console.log(state);
   };
 
   return (
