@@ -40,6 +40,21 @@ function Circle(props) {
     return `${r * 2}px`;
   };
 
+  const getTextSize = (radius) => {
+    if (parseInt(radius) < 3) {
+      return "1px";
+    }
+    if (parseInt(radius) < 10) {
+      return "2px";
+    }
+
+    if (parseInt(radius) < 20) {
+      return "5px";
+    }
+
+    return "";
+  };
+
   return (
     <div
       style={{
@@ -52,7 +67,9 @@ function Circle(props) {
         alignItems: "center",
       }}
     >
-      <span>r={parseInt(radius)}</span>
+      <span style={{ fontSize: getTextSize(radius) }}>
+        r={parseInt(radius)}
+      </span>
     </div>
   );
 }
