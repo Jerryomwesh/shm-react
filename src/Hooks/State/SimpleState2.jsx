@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SimpleState2() {
-  // destrctrurinc
+  // destrctrure
   const [currentState, setCurrentState] = useState(0);
 
   const increment = () => {
