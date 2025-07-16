@@ -27,6 +27,32 @@ function FormState() {
         For a circle with radius <b>{radius}</b> Area is{" "}
         <b>{areaCircle(radius)}</b>
       </div>
+      <Circle radius={radius} />
+    </div>
+  );
+}
+
+function Circle(props) {
+  const { radius } = props;
+
+  const getSize = (radius) => {
+    let r = parseInt(radius);
+    return `${r * 2}px`;
+  };
+
+  return (
+    <div
+      style={{
+        width: getSize(radius),
+        height: getSize(radius),
+        borderRadius: "2000px",
+        backgroundColor: "rgba(0,0,0,0.1)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <span>r={parseInt(radius)}</span>
     </div>
   );
 }
