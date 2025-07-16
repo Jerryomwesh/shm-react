@@ -3,13 +3,24 @@ function ParentComponent() {
   const img = "https://m.media-amazon.com/images/I/716H7P4ga3L._AC_SY741_.jpg";
   const price = 2000;
   const onStock = true;
+  let doc = {
+    name: "",
+  };
 
   // <Component a={23} b={34} key={value} key={value} />
   // {key:value}
 
   return (
     <div>
-      <ChildComponent name={name} img={img} price={price} onStock={onStock} />
+      <ChildComponent
+        name={name}
+        img={img}
+        price={price}
+        onStock={onStock}
+        doc={doc}
+      />
+      {/* map */}
+
       <ChildComponent2 name={name} img={img} price={price} onStock={onStock} />
       <ChildComponent3 name={name} img={img} price={price} onStock={onStock} />
     </div>

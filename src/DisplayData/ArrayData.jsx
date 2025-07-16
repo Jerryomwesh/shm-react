@@ -17,6 +17,10 @@ function ShowColors() {
   }
   // arrow, normal function, namedFunction,Anaymous
 
+  // for (let color in colors) {
+  //   console.log(color);
+  // }
+
   return (
     <div>
       <h1>These are my favouritge colors</h1>
