@@ -1,14 +1,20 @@
+// React Hooks:React Function
+// If in  there is something you to update in realtime
 import { useState } from "react";
 
 //return [currentState,function:updateState]
 
 function SimpleState() {
-  //Rule: Initial State
-  const state = useState(10);
+  //Rule: Initial State or null
+  const state = useState(0);
 
-  let clicked = 0;
   const increment = () => {
     console.log(state);
+    let currentState = state[0];
+    let newState = currentState + 1;
+    let updateStateFunction = state[1];
+    // state[1](newState);
+    updateStateFunction(newState);
   };
 
   return (
@@ -16,7 +22,7 @@ function SimpleState() {
       <div>
         <button onClick={increment}>Click Me</button>
       </div>
-      <h3>Clicked {clicked}</h3>
+      <h3>Clicked {state[0]}</h3>
     </div>
   );
 }
