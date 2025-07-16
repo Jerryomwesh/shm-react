@@ -19,7 +19,6 @@ function ParentComponent() {
         onStock={onStock}
         doc={doc}
       />
-      {/* map */}
 
       <ChildComponent2 name={name} img={img} price={price} onStock={onStock} />
       <ChildComponent3 name={name} img={img} price={price} onStock={onStock} />
@@ -29,6 +28,7 @@ function ParentComponent() {
 
 // img,name,price
 function ChildComponent(props) {
+  console.log(props);
   return (
     <div>
       <h1>Child component 1</h1>
