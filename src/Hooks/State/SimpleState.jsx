@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function SimpleState() {
   //Rule: Initial State or null
-  const state = useState(0);
+  const state = useState(0); // State [current,function]
 
   const increment = () => {
     console.log(state);
@@ -19,6 +19,7 @@ function SimpleState() {
 
   return (
     <div>
+      <h1>Simple State 1</h1>
       <div>
         <button onClick={increment}>Click Me</button>
       </div>
