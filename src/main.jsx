@@ -19,8 +19,11 @@ import SimpleState2 from "./Hooks/State/SimpleState2";
 
 import FormState from "./Hooks/State/FormState";
 
+import ReactRouter from "./Routing";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <FormState />
+    {/* <FormState /> */}
+    < ReactRouter />
   </StrictMode>
 );
