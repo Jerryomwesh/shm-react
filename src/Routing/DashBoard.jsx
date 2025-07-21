@@ -4,7 +4,7 @@ import All from "./All";
 
 import NavComponent from "./NavComponent";
 
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 
 function Dashboard() {
   return (
